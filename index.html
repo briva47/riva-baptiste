@@ -4,13 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Votre Nom</title>
-  <!-- Lien CDN Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .hero-section {
+      background: #343a40;
+      color: #ffffff;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+    }
+    .section-title {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .card {
+      margin-bottom: 30px;
+    }
+    .contact-form {
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navbar Bootstrap -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand" href="#">Mon Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -18,10 +42,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#projets">Projets</a>
+            <a class="nav-link" href="#intro">Introduction</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#experience">Expérience</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -31,17 +55,82 @@
     </div>
   </nav>
 
-  <!-- Section principale -->
-  <div class="container mt-5">
+  <!-- Hero Section -->
+  <section id="intro" class="hero-section">
+    <div class="container">
+      <h1>Bonjour, je suis Baptiste Riva</h1>
+      <p>Fraîchement diplômé du titre professionnel d’administrateur d’infrastructure sécurisée, je suis à la recherche d’un emploi dans le domaine des systèmes d’informations. Autonome et sérieux, j’ai pu avoir une expérience d’un an au sein d’une équipe informatique durant mon alternance.</p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="container">
+    <div class="section-title">
+      <h2>Expérience Professionnelle et Projets</h2>
+    </div>
     <div class="row">
-      <div class="col">
-        <h1>Bienvenue sur mon Portfolio</h1>
-        <p>Administrateur réseau - 2 ans d'expérience</p>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Projet Informatique | Club Billard</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Segré (49) | 02/22 - 07/22</h6>
+            <p class="card-text">Développement d'un site web et d'un espace administration afin de pouvoir modifier/ajouter du contenu avant de le publier.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Projet Informatique | CFPPA</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Segré (49) | 09/22 - 01/23</h6>
+            <p class="card-text">Migration du serveur et de ses VMs de Windows Server 2012 R2 vers Windows Server 2022. Mon équipe et moi avons également utilisé la méthode agile (scrum) afin de s'organiser lors de ce projet.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Projet Formation Humaine | Les Vignerons de Buzet</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Buzet (47) | 02/22 - 07/22</h6>
+            <p class="card-text">Création de support de communication vidéo dans le but de promouvoir le savoir-faire et l'investissement dans le développement durable de la coopérative.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Technicien Systèmes et Réseaux | SCA Qualisol</h5>
+            <h6 class="card-subtitle mb-2 text-muted">08/23 - 08/24</h6>
+            <p class="card-text">Administration de système (majoritairement Windows) et du réseau au sein d’une entreprise de 150 employés dans le cadre d’une formation en alternance.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Lien CDN Bootstrap JS -->
+  <!-- Contact Section -->
+  <section id="contact" class="container contact-form">
+    <div class="section-title">
+      <h2>Contactez-moi</h2>
+    </div>
+    <form action="https://formspree.io/f/xblreqzz" method="POST">
+      <div class="mb-3">
+        <label for="email" class="form-label">Adresse email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Votre message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3">
+    <p>&copy; 2024 Riva Baptiste. Tous droits réservés.</p>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
