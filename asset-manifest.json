@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/tonrepo/static/css/main.31d6cfe0.css",
-    "main.js": "/tonrepo/static/js/main.cbeffc40.js",
-    "static/js/453.1407b060.chunk.js": "/tonrepo/static/js/453.1407b060.chunk.js",
-    "index.html": "/tonrepo/index.html",
-    "main.cbeffc40.js.map": "/tonrepo/static/js/main.cbeffc40.js.map",
-    "453.1407b060.chunk.js.map": "/tonrepo/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/riva-baptiste/static/css/main.31d6cfe0.css",
+    "main.js": "/riva-baptiste/static/js/main.833e03a4.js",
+    "static/js/453.1407b060.chunk.js": "/riva-baptiste/static/js/453.1407b060.chunk.js",
+    "index.html": "/riva-baptiste/index.html",
+    "main.833e03a4.js.map": "/riva-baptiste/static/js/main.833e03a4.js.map",
+    "453.1407b060.chunk.js.map": "/riva-baptiste/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.cbeffc40.js"
+    "static/js/main.833e03a4.js"
   ]
 }
